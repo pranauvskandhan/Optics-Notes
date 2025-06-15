@@ -1,0 +1,150 @@
+\documentclass[12pt]{article}
+
+%packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{enumitem} 
+\usepackage{amssymb}
+
+%page setup
+\geometry{a4paper, margin=1in}
+%colors
+\definecolor{chaptercolor}{RGB}{0, 102, 204}
+\definecolor{sectioncolor}{RGB}{0, 153, 76}
+\definecolor{subsectioncolor}{RGB}{153, 0, 153}
+
+%Title formatting w spacing
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{chaptercolor}}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{sectioncolor}}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{15pt}{8pt}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{subsectioncolor}}{\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
+
+%Title info
+\title{\textbf{The Propagation of Light}}
+\author{Pranauv Skandhan}
+\date{}
+\begin{document}
+
+%Title page
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Rayleigh Scattering}
+\begin{itemize}
+\item Long before Quantum Mechanics, Rayleigh analyzed scattered sunlight in terms of molecular oscillators.
+\item{Using a dimensional analysis argument, he correctly concluded that the intensity of scattered light was proportional to $\frac{1}{\lambda^4}$ and therefore increases with $v^4$}.
+\item{Since then, scattering involving particles smaller than a wavelength (i.e., less than about $\frac{\lambda}{10}$) has been referred to as \textbf{Rayleigh Scattering}.}
+\item{Rayleigh Scattering is the scattering of light (or other E.M radiation) by particles much smaller than the wavelength of the light.}
+\item{In simple terms, Rayleigh Scattering explains \textbf{why the sky is blue} and \textbf{sunsets are red}.}
+\end{itemize}
+\subsection{Physics of it:}
+\begin{itemize}
+\item{When sunlight enters the Earth's atmosphere, it interacts with the air molecules (mostly nitrogen \& oxygen), these molecules are tiny compared to the wavelength of visible light, so they scatter shorter wavelengths (like blue \& violet) much more strongly than longer wavelengths (like red).}
+\item{Scattering intensity $\propto \frac{1}{\alpha^4}$, where $\lambda$ is the wavelength
+$\left(I\propto\frac{1}{\lambda^4}\right)$.}
+\item{So $\lambda_{blue}$ (being short, i.e., 450 to 495 nm), is scattered $\sim 10$x more than $\lambda_{red}$\\(620-720 nm)}.
+\item{Violet is scattered even more than blue, but our eyes are less sensitive to violet and also some of it gets absorbed in the upper atmosphere. So we see the sky as blue.}
+\item{\textbf{At sunset,} the sun's rays passes more through atmosphere, so most of the blue gets scattered out before reaching our eyes. We mostly see the remaining red, orange, and yellow light.}
+\item{Rayleigh scattering only applies when particle sizes are much smaller than the light's wavelength.}
+\item{For larger particles (like water droplets), \textbf{Mie scattering} takes over which explains \textbf{white clouds}.}
+\item{Sunlight streaming into the atmosphere from one direction is
+scattered in all directions—Rayleigh Scattering is the same in
+the forward and backward directions. Without an atmosphere,
+the daytime sky would be as black as the void of space, as black
+as the Moon sky. When the Sun is low over the horizon, its light
+passes through a great thickness of air (far more so than it does
+at noon). With the blue-end appreciably attenuated, the reds and
+yellows propagate along the line-of-sight from the Sun to
+­ produce Earth’s familiar fiery sunsets.}\\\\
+\end{itemize}
+\subsection{Scattering and Interface}
+\begin{itemize}
+\item{\textbf{Scattering:}}
+\begin{itemize}[label=\textrightarrow]
+\item Scattering is the redirection of light or any EM wave when it encounters particles or irregularities in a medium.
+\item Because light is an EM wave, it interacts with a particle and it causes the particle's electrons to oscillate and these oscillating electrons re-radiate light in new directions.
+\item Types of Scattering:\\
+(i) \textbf{Rayleigh} - occurs when particles $\gg$ wavelength. (Example-Blue sky)\\
+(ii) \textbf{Mie} - occurs when particles $\approx$ wavelength. (Example- White clouds, fog)\\
+(iii) \textbf{Tyndall} - occurs when light passes through colloids. (Example- Blue appearance of smoke)\\
+(iv) \textbf{Raman} - occurs when the energy changes (Inelastic scattering). (Example- Raman spectroscopy)
+\item Scattering reduces intensity in the original direction (called extinction).
+\item It may also polarize light or change its wavelength (in some types like Raman).
+\item The amount and type of scattering depend on:\\
+(i) Particle size\\
+(ii) Wavelength of light\\
+(iii) Refractive index of the medium
+\end{itemize}
+\item{\textbf{Interface}}
+\begin{itemize}[label=\textrightarrow]
+\item Interface is the phenomenon that occurs when 2 or more waves overlap in space and time, producing a resultant wave due to the superposition of their amplitudes.
+\item The result can be stronger, weaker, or even zero depending on the phase difference between the waves.
+\item Types of Interface:\\
+\textbf{(i) Total Constructive Interference}:\\
+$\Rightarrow$ Total constructive interference occurs when two waves of the same frequency and amplitude are perfectly in phase, causing their amplitudes to add up maximally.\\
+$\Rightarrow$ \textbf{Phase difference}, $\Delta \phi=2n\pi$,  where $n\in \mathbb{Z}$,\\
+This means that the 2 waves' crests and troughs line up exactly and the displacements at every point add up to produce a wave of maximum possible amplitude.\\
+If 2 waves are:\\
+$y_1=A\sin (\omega t),\, y_2=A\sin(\omega t+0)=A\sin(\omega t)$,\\
+then their sum is:\\
+$y=y_1+y_2=A\sin(\omega t)+A\sin(\omega t)=2A\sin(\omega t)$\\
+Amplitude doubles while frequency stays the same.\\\\
+\textbf{(ii) Total Destructive Interference:}\\
+$\Rightarrow$ Total destructive interference occurs when two waves of the same frequency and amplitude meet exactly out of phase, causing them to completely cancel each other.\\
+$\Rightarrow$ \textbf{Phase difference}, $\Delta \phi=(2n+1)\pi$, where $n\in \mathbb{Z}$,\\
+this means the waves are shifted by half a wavelength $\left(\frac{\lambda}{2}\right), \frac{3\lambda}{2}$, etc and when one wave has a crest, the other has a trough at the same point, it cancels out.\\
+If 2 waves are:\\
+$y_1=A\sin(\omega t)$ and $y_2=A\sin(\omega t+\pi)=-A\sin(\omega t)$,\\
+their sum is:\\
+$y=y_1+y_2=A\sin(\omega t)-A\sin(\omega t)=0$\\
+Net result = zero amplitude everywhere.\\\\
+\textbf{Forward Propagation:}\\
+$\Rightarrow$ Forward propagation means that when 2 coherent light waves interfere, the resultant wave continues to move in the original direction (e.g., along the $+x$-axis). In other words, all the scattered wavelets add
+constructively with each other in the forward direction.\\
+$\Rightarrow$ This is typical in \textbf{constructive interference}, where energy combines and travels forward more strongly.\\
+$\Rightarrow$ In contrast, in some destructive interference setups (like reflection in anti-reflective coatings), forward propagation may be reduced or canceled due to cancellation.
+\end{itemize}
+\end{itemize}
+\subsection{The Transmission of Light Through Dense Media}
+When light passes from one medium to another (like air$\rightarrow$water, or glass$\rightarrow$plastic), it transmits, reflects, or refracts, depending on the optical properties of the media.\\\\
+\textbf{1. Refraction:}\\
+\begin{itemize}
+\item Light bends at the interface due to a change in speed.
+\item In a denser medium (higher refractive index $n$), light slows down and bends toward the normal.\\
+$n_1\sin \theta_1=n_2\sin\theta_2$ (Snell's Law)
+\end{itemize}
+\textbf{2. Wavelength changes, frequency stays constant:}\\\\
+In denser media:\\\\$v=\frac{c}{n},\,\lambda=\frac{v}{f}$
+\begin{itemize}
+\item $c$= speed of light in vacuum
+\item $v$= reduced speed in medium
+\item $n$= refractive index
+\item $f$= frequency (remains constant)
+\item $\lambda$= wavelength decreases
+\end{itemize}
+\textbf{3. Partial reflection:}
+\begin{itemize}
+\item Some portion of light is reflected back at the boundary.
+\item Stronger if the difference in refractive indices is large
+\end{itemize}
+\textbf{4. Absorption and Scattering}:\\
+In denser media, especially if impure or non-transparent, light may also be:
+\begin{itemize}
+\item \textbf{Absorbed} (converted to heat)
+\item \textbf{Scattered} (direction randomly changed)
+\end{itemize}
+\end{document}
